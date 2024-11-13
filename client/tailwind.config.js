@@ -9,21 +9,22 @@ export default {
       fontFamily: {
         "bpg-arial-caps": ['"BPG Arial Caps", sans-serif'],
         "bpg-arial": ['"BPG Arial", sans-serif'],
-        "alk-sanet": ['"ALK Sanet", sans-serif']
+        "alk-sanet": ['"ALK Sanet", sans-serif'],
+        "firego": ["FiraGO"]
       },
-      keyframes: {
-        fadein: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        pulldown: {
-          '0%': { marginBottom: '100%' },
-          '100%': { marginBottom: '0%' }
-        }
+      colors: {
+        "text-primary-blue": "#063776",
       },
-      animation: {
-        'fade-in': 'fadein .5s linear',
-        'pull-down': 'pulldown .3s ease-in-out'
+      backgroundImage: {
+        'bg-gradient': 'linear-gradient(223.09deg, #063776 0.75%, #063776 20.17%, #0C67DC 70.33%)',
+        'bg-image': 'url("/BgDecoration.svg")'
+      },
+      backgroundPosition: {
+        'top-right': 'top right',
+        'center': 'center',
+      },
+      backgroundRepeat: {
+        'no-repeat': 'no-repeat', 
       }
     },
   },
