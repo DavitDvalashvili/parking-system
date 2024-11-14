@@ -1,4 +1,4 @@
-import NavigationLayout from '../../components/MainComponents/NavigationLayout/NavigationLayout';
+import NavigationLayout from '../../components/MainComponents/NavigationLayout';
 import Notification from '../../components/Notification';
 import { Outlet, useNavigate } from 'react-router-dom';
 import { useParking } from '../../App';

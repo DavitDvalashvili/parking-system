@@ -68,7 +68,7 @@ const Login = () => {
         <div>
           <h2 className="text-text-primary-blue text-[2.5rem] font-bold">მოგესამლებით!</h2>
           <p className="mt-3.5 mb-8 font-medium text-[1.188rem] leading-[1.781rem]">გთხოვთ შეხვიდეთ სისტემაში</p>
-          <form className="text-sm text-text-gray-secondary mb-5">
+          <form className="text-sm text-text-gray-secondary mb-5" onSubmit={login}>
             <div className=" w-[21.625rem] h-[3.75rem] rounded-[1.875rem] border border-border-color py-[1.125rem] px-[1.625rem] flex justify-start items-center gap-3">
               <FaLock className="text-text-gray-secondary opacity-30" />
               <input className="w-full h-full focus:outline-none " type='text' placeholder='მომხმარებლის სახელი' name='username' value={authInfo.username} onChange={handleChangeAuthInfo} />
@@ -77,7 +77,7 @@ const Login = () => {
               <FaLock className="text-text-gray-secondary opacity-30" />
               <input className="w-full h-full focus:outline-none" type='password' placeholder='პაროლი' name='password' value={authInfo.password} onChange={handleChangeAuthInfo}/>
             </div>
-            <button type="submit" className="text-white bg-text-primary-blue font-bold leading-[1.298rem] text-[1rem] w-[21.625rem] h-[3.75rem] rounded-[1.875rem]" onClick={login}>შესვლა</button>
+            <button type="submit" className="text-white bg-text-primary-blue font-bold leading-[1.298rem] text-[1rem] w-[21.625rem] h-[3.75rem] rounded-[1.875rem]" >შესვლა</button>
           </form>
           <span className="text-center block text-text-gray-secondary text-sm opacity-30 cursor-pointer">დაგავიწყდა პაროლი?</span>
         </div>

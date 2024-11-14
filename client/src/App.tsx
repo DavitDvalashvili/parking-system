@@ -14,6 +14,7 @@ import Devices from './views/Main/Devices';
 import Counter from './views/Main/Counter';
 import History from './views/Main/History';
 import Settings from './views/Main/Settings';
+import Statistic from './views/Main/Statistic';
 
 import { TailwaindBackgroundColor, TailwindForeColor } from './interfaces';
 
@@ -83,6 +84,7 @@ function App() {
 				  <Route path='/cards' element={<Cards/>}/>
 				  <Route path='/devices' element={<Devices/>}/>
 				  <Route path='/counter' element={<Counter/>}/>
+				  <Route path='/statistic' element={<Statistic/>}/>
 				  <Route path='/history' element={<History/>}/>
 				  <Route path='/settings' element={<Settings/>}/>
 				</Route>
