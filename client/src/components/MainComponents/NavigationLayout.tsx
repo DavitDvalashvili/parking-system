@@ -7,7 +7,7 @@ import { Link,
 //import axios, { AxiosResponse } from 'axios';
 
 import { MdHomeFilled } from 'react-icons/md';
-import { BsCreditCard2BackFill } from 'react-icons/bs';
+import { IoIosCard } from "react-icons/io";
 import { GrUpdate } from "react-icons/gr";
 import { RiSettings5Fill } from 'react-icons/ri';
 import { PiDeviceMobileSpeakerFill } from 'react-icons/pi';
@@ -37,7 +37,7 @@ const NavigationLayout = () => {
 		},
 		{
 			path: '/cards',
-			icon: <BsCreditCard2BackFill />,
+			icon: <IoIosCard />,
 			name: 'ბარათები',
 		},
 		{

@@ -24,11 +24,12 @@ const Main = () => {
 
   if (userData === 'Loading') return <Loading />;
 	else if (userData === 'Network Error') return <ServerError />;
+
   else if (userData instanceof Object) {
 		return (
 			<div className='w-screen h-screen bg-slate-50 flex font-alk-sanet'>
 				<NavigationLayout />
-				<div className='p-4 flex flex-col flex-1 bg-red-500'>
+				<div className='flex flex-col flex-1 bg-bg-image bg-top-right bg-no-repeat'>
 					<Outlet />
 				</div>
 				{notification && <Notification />}
