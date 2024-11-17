@@ -27,7 +27,7 @@ const Main = () => {
 
   else if (userData instanceof Object) {
 		return (
-			<div className='w-screen h-screen bg-slate-50 flex font-alk-sanet'>
+			<div className='w-screen h-screen bg-slate-50 flex font-firago'>
 				<NavigationLayout />
 				<div className='flex flex-col flex-1 bg-bg-image bg-top-right bg-no-repeat'>
 					<Outlet />

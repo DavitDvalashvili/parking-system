@@ -86,7 +86,7 @@ const EditCard: FC<EditCard> = ({ card, setCards, hideEditCard }): JSX.Element =
 				<ModalHeader title='ბარათის რედაქტირება' onHide={hideEditCard} />
 				<ModalBody>
 					<div className='flex justify-center'>
-						<input type='text' placeholder='ბარათის ნომერი' className='py-2 px-3 font-bpg-arial-caps outline-none rounded-lg border border-slate-300 w-8/12' value={selectedCard.card_uid} onChange={handleChangeCard} />
+						<input type='text' placeholder='ბარათის ნომერი' className='py-2 px-3 outline-none rounded-lg border border-slate-300 w-8/12' value={selectedCard.card_uid} onChange={handleChangeCard} />
 						<div className='relative ms-5'>
 							<div className='px-4 py-2 border border-green-400 hover:bg-green-400 text-slate-600 hover:text-white rounded-lg text-lg cursor-pointer duration-300' onClick={toggleSelectRole}>
 								{selectedRole?.role_name_description}

@@ -7,10 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "bpg-arial-caps": ['"BPG Arial Caps", sans-serif'],
-        "bpg-arial": ['"BPG Arial", sans-serif'],
-        "alk-sanet": ['"ALK Sanet", sans-serif'],
-        "firego": ["FiraGO"]
+        firago: ['Firago', 'sans-serif'],
       },
       colors: {
         "text-primary-blue": "#063776",

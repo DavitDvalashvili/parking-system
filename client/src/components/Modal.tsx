@@ -4,7 +4,7 @@ import { Props, tailwindProps } from '../interfaces';
 
 export const ModalContainer = (props: Props): JSX.Element => {
 	return (
-		<div {...props} className={`w-screen h-screen flex justify-center items-center bg-slate-800/[.4] absolute left-0 top-0 transition-colors font-alk-sanet ${props.className} z-[9999]`}>
+		<div {...props} className={`w-screen h-screen flex justify-center items-center bg-slate-800/[.4] absolute left-0 top-0 transition-colors ${props.className} z-[9999]`}>
 			{props.children}
 		</div>
 	);

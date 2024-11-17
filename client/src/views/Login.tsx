@@ -58,7 +58,7 @@ const Login = () => {
 
 
   return (
-    <div className="w-screen h-screen flex justify-center item-center">
+    <div className="w-screen h-screen flex justify-center item-center font-firago">
       <div className="w-[61.8vw] h-full bg-green-200 bg-bg-gradient bg-center p-10 flex justify-center items-start flex-col">
         <img src="/logoWhite.svg" alt="logo" className="w-[294px] h-[114.76px]" />
         <p className="mt-4 mb-6 text-white text-[19px] max-w-[372px] font-normal">ყველაზე პოპულარული პარკინგის მენეგმენტის სისტემა</p>
