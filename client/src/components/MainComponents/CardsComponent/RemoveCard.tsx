@@ -44,7 +44,7 @@ const RemoveCard: FC<RemoveCard> = ({ card, setCards, hideRemoveCard }) => {
 
   return (
     <ModalContainer>
-      <Modal className="">
+      <Modal>
         <ModalHeader onHide={hideRemoveCard} />
         <ModalBody>
           <div className="w-[37.938rem]">

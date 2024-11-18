@@ -100,7 +100,10 @@ const AddCardForm: FC<CardForm> = ({ setCards }): JSX.Element => {
           value={cardUID}
           onChange={handleChangeCardUID}
         />
-        <HiOutlinePlusSm onClick={addNewCard} className="w-6 h-6 rounded-full cursor-pointer" />
+        <HiOutlinePlusSm
+          onClick={addNewCard}
+          className="w-6 h-6 rounded-full cursor-pointer"
+        />
       </div>
 
       <div className="relative ms-5">
@@ -108,10 +111,8 @@ const AddCardForm: FC<CardForm> = ({ setCards }): JSX.Element => {
           className="flex justify-center items-center gap-4 px-[0.875rem] py-[0.813rem] bg-white rounded-[0.625rem] font-bold text-base leading-5 cursor-pointer"
           onClick={toggleSelectRole}
         >
-          <span>
-          {selectedRole?.role_name_description}
-          </span>
-          {dropdownRole && <IoIosArrowUp className="w-6 h-6"/>}
+          <span>{selectedRole?.role_name_description}</span>
+          {dropdownRole && <IoIosArrowUp className="w-6 h-6" />}
           {!dropdownRole && <IoIosArrowDown className="w-6 h-6" />}
         </div>
         {dropdownRole && (
