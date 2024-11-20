@@ -120,7 +120,7 @@ const EditCard: FC<EditCard> = ({
                 {!dropdownRole && <IoIosArrowDown className="w-6 h-6" />}
               </div>
               {dropdownRole && (
-                <div className="flex flex-col absolute px-[0.688rem] z-10 bg-white top-[0%] rounded-[0.625rem] font-bold text-base leading-5 cursor-pointer border-[0.5px] border-text-primary-blue text-gray-primary px-[1.375rem] w-[16.188rem]">
+                <div className="flex flex-col absolute z-10 bg-white top-[0%] rounded-[0.625rem] font-bold text-base leading-5 cursor-pointer border-[0.5px] border-text-primary-blue text-gray-primary px-[1.375rem] w-[16.188rem]">
                   {roles
                     .sort((a, b) =>
                       a === selectedRole ? -1 : b === selectedRole ? 1 : 0
@@ -156,14 +156,14 @@ const EditCard: FC<EditCard> = ({
           <input
             type="text"
             placeholder="ბარათის ნომერი"
-            className="block mx-auto text-text-gray-primary border-[0.5px] mb-[1.438rem] border-text-primary-blue font-bold px-[1.375rem] text-base leading-[1.25rem] text-text-gray-primary h-[3.125rem] w-[16.188rem] focus:outline-none rounded-[0.625rem]"
+            className="block mx-auto border-[0.5px] mb-[1.438rem] border-text-primary-blue font-bold px-[1.375rem] text-base leading-[1.25rem] text-text-gray-primary h-[3.125rem] w-[16.188rem] focus:outline-none rounded-[0.625rem]"
             value={selectedCard.card_uid}
             onChange={handleChangeCard}
           />
         </ModalBody>
         <ModalFooter>
           <button
-            className="w-[9.625rem] h-10 bg-button-green rounded-[0.625rem] flex justify-between font-bold mx-auto text-white text-[1rem] leading-5 flex justify-center items-center px-2 mb-5"
+            className="w-[9.625rem] h-10 bg-button-green rounded-[0.625rem] font-bold mx-auto text-white text-[1rem] leading-5 flex justify-center items-center px-2 mb-5"
             onClick={updateCard}
           >
             <span>რედაქტირება</span>

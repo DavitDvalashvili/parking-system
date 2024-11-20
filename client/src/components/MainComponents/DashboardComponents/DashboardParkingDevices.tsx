@@ -74,11 +74,16 @@ const DashboardParkingDevices = (): JSX.Element => {
       </div>
       <div className="text-text-primary-blue font-bold flex flex-col gap-5 mt-[2rem]">
         <span>
-          თავისუფალი<span className="bg-button-green ml-[1.375rem]">100</span>
+          თავისუფალი
+          <span className="bg-button-green ml-[1.375rem] text-white rounded-md px-[0.438rem] h-[1.625rem]">
+            100
+          </span>
         </span>
         <span>
           დაკავებული
-          <span className="bg-delete-button-red ml-[1.375rem]">20</span>
+          <span className="bg-delete-button-red ml-[1.375rem] text-white rounded-md px-[0.438rem] h-[1.625rem]">
+            20
+          </span>
         </span>
       </div>
     </div>

@@ -11,6 +11,7 @@ export default {
         "bg-main": "#F8F9FA",
         "button-bg-yellow": "#FFCA40",
         "border-color": "#EEEEEE",
+        "border-color-secondary": "#63769A",
         "text-gray-primary": "#334155",
         "text-gray-secondary": "#333333",
         "delete-button-red": "#EE4444",
