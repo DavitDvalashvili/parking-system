@@ -113,7 +113,7 @@ const DeviceCard: FC<DeviceCard> = ({
           />
         </div>
         <div className="px-3 py-2">
-          <div className="border-0 border-t border-slate-300 pt-4 flex flex-col mt-3">
+          <div className="border-0 border-t border-border-color-secondary pt-4 mt-4 text-text-gray-primary">
             <div className="flex items-center justify-between mt-1">
               <div className="relative">
                 <div
@@ -276,15 +276,10 @@ const DeviceCard: FC<DeviceCard> = ({
           </div>
         </div>
         {device.device_type.devicetype_type === "card-receiver" && (
-          <div className="mt-0 px-3 py-2">
-            <div className="flex flex-col border-0 border-t border-slate-300 pt-4">
-              <button
-                className="w-fit flex justify-center items-center gap-x-2 text-slate-700 hover:text-slate-600"
-                onClick={() => showFitDevice(device)}
-              >
-                <IoMdOptions /> მრიცხველის მორგება
-              </button>
-            </div>
+          <div className="border-0 border-t border-border-color-secondary pt-4 mt-4 text-text-gray-primary">
+            <button className=" " onClick={() => showFitDevice(device)}>
+              მრიცხველის მორგება
+            </button>
           </div>
         )}
       </div>
