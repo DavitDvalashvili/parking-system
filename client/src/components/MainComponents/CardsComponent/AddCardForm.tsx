@@ -35,6 +35,7 @@ const AddCardForm: FC<CardForm> = ({ setCards }): JSX.Element => {
     setCardUID(e.target.value);
 
   const toggleSelectRole = () => setDropdownRole(!dropdownRole);
+
   const handleSelectRole = (role: Role) => {
     setSelectedRole(role);
     toggleSelectRole();
@@ -59,9 +60,9 @@ const AddCardForm: FC<CardForm> = ({ setCards }): JSX.Element => {
                 },
                 ...cards,
               ]);
-              showNotification(message);
+              showNotification(message, true);
             } else if (status === "insert_exist" || status === "insert_error") {
-              showNotification(message, "bg-red-500");
+              showNotification(message, false);
             }
           }
         })

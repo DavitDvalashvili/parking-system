@@ -83,13 +83,13 @@ const EditCard: FC<EditCard> = ({
                 });
               });
               hideEditCard();
-              showNotification(message);
+              showNotification(message, true);
             } else if (
               status === "update_exists" ||
               status === "update_error"
             ) {
               hideEditCard();
-              showNotification(message, "bg-red-500");
+              showNotification(message, false);
             }
           }
         })

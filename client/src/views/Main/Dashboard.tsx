@@ -10,7 +10,7 @@ const Dashboard = () => {
   const [cards, setCards] = useState<card[]>([]);
 
   return (
-    <div className="p-10 pr-[7.625rem] flex flex-col gap-10">
+    <div className="pt-10 pb-[1.875rem] pl-[33px] pr-[7rem] flex flex-col gap-10 overflow-v">
       <div className="flex gap-[1.875rem]">
         <div
           className="text-text-gray-primary font-bold text-xl leading-[1.875rem] flex justify-center items-center gap-6 bg-white 

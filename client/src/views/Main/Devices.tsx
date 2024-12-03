@@ -78,6 +78,7 @@ const Devices = (): JSX.Element => {
       .then((res) => {
         if (res.status >= 200 && res.status <= 226) {
           setDevices(res.data);
+          console.table(res.data);
         }
       })
       .catch((err) => {
@@ -105,6 +106,7 @@ const Devices = (): JSX.Element => {
     setSelectedDevice(device);
     setIsDeviceDeleting(true);
   };
+
   const hideDeleteDevice = (): void => {
     setSelectedDevice(defaultDevice);
     setIsDeviceDeleting(false);
@@ -139,7 +141,7 @@ const Devices = (): JSX.Element => {
                 });
               });
             } else {
-              showNotification("ცვლილება ვერ განხორციელდა", "bg-red-500");
+              showNotification("ცვლილება ვერ განხორციელდა", false);
             }
           }
         })

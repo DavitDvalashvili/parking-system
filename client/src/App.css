@@ -1,0 +1,11 @@
+.overflow-v {
+  overflow-y: auto;
+}
+
+.overflow-v::-webkit-scrollbar {
+  width: 5px;
+}
+
+.overflow-v::-webkit-scrollbar-thumb {
+  background-color: gray;
+}

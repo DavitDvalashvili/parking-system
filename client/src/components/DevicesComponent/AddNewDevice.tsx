@@ -75,7 +75,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
             ];
           });
           hideAddNewDevice();
-          showNotification("მოწყობილობა წარმატებით დაემატა");
+          showNotification("მოწყობილობა წარმატებით დაემატა", true);
         }
       })
       .catch((err) => {

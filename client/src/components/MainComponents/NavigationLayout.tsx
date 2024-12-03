@@ -1,11 +1,7 @@
-//import { useParking } from '../../App';
+import { useParking } from "../../App";
 import { useEffect } from "react";
-import {
-  Link,
-  useLocation,
-  //useNavigate
-} from "react-router-dom";
-//import axios, { AxiosResponse } from 'axios';
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import axios, { AxiosResponse } from "axios";
 
 import { MdHomeFilled } from "react-icons/md";
 import { IoIosCard } from "react-icons/io";
@@ -22,10 +18,10 @@ type NavMenuObject = {
 };
 
 const NavigationLayout = () => {
-  // const { API_URL, setUserData } = useParking();
+  const { API_URL, setUserData } = useParking();
 
   const location = useLocation();
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const NavMenu: NavMenuObject[] = [
     {
@@ -65,21 +61,21 @@ const NavigationLayout = () => {
     },
   ];
 
-  //   const logout = async () => {
-  // 		await axios
-  // 			.post(API_URL + '/logout')
-  // 			.then((res: AxiosResponse) => {
-  // 				if (res.status >= 200 && res.status <= 226) {
-  // 					setUserData(null);
-  // 					navigate('/login');
-  // 				}
-  // 			})
-  // 			.catch((err) => {
-  // 				console.log(err);
-  // 				setUserData(null);
-  // 				navigate('/login');
-  // 			});
-  // 	};
+  const logout = async () => {
+    await axios
+      .post(API_URL + "/logout")
+      .then((res: AxiosResponse) => {
+        if (res.status >= 200 && res.status <= 226) {
+          setUserData(null);
+          navigate("/login");
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        setUserData(null);
+        navigate("/login");
+      });
+  };
 
   useEffect(() => {
     const validPath = NavMenu.find((nm) => nm.path === location.pathname);
@@ -87,26 +83,24 @@ const NavigationLayout = () => {
   }, [location]);
 
   return (
-    <div className="flex flex-col w-[26.5625vw] h-full bg-white">
+    <div className="flex flex-col w-[26.5625vw] h-screen bg-white ">
       <div className="flex justify-center pb-[6rem] pt-10">
         <img src="./logoBlue.svg" alt="logo" />
       </div>
       <div>
-        <ul className="text-center w-full flex flex-col flex-1 text-xl text-text-gray-primary text-xl font-bold leading-6 gap-[2.125rem]">
+        <ul className="text-center w-full flex flex-col flex-1  text-text-gray-primary text-xl font-bold leading-6 gap-[2.125rem]">
           {NavMenu.map((item: NavMenuObject, i: number) => {
             const textColor: string =
               item.path === location.pathname
                 ? "text-white"
                 : "text-text-gray-primary";
             const bgColor: string =
-              item.path === location.pathname
-                ? "bg-text-primary-blue"
-                : "bg-white";
+              item.path === location.pathname ? "bg-text-primary-blue" : "";
             return (
               <li className="flex" key={i}>
                 <Link
                   to={item.path}
-                  className={`py-[0.469rem] ${textColor} ${bgColor} flex items-center leading-[1.876rem] rounded-r-[0.625rem] w-full pl-[3.75rem] flex justify-left items-center gap-6`}
+                  className={`py-[0.469rem] ${textColor} ${bgColor} flex items-center leading-[1.876rem] rounded-r-[0.625rem] w-full pl-[3.75rem] justify-left  gap-6`}
                 >
                   <span>{item.icon}</span>
                   <span>{item.name}</span>
@@ -115,6 +109,14 @@ const NavigationLayout = () => {
             );
           })}
         </ul>
+      </div>
+      <div className="w-full mt-auto">
+        <button
+          className="p-4 w-full pb-3 bg-[#E44] text-white rounded-[20px] font-bold"
+          onClick={logout}
+        >
+          გასვლა
+        </button>
       </div>
     </div>
   );

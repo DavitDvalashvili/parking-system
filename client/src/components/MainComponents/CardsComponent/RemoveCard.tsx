@@ -29,13 +29,13 @@ const RemoveCard: FC<RemoveCard> = ({ card, setCards, hideRemoveCard }) => {
             const { status, message } = res.data;
             if (status === "deleted") {
               hideRemoveCard();
-              showNotification(message);
+              showNotification(message, true);
               setCards((cards) =>
                 cards.filter((_card) => _card.card_id !== card.card_id)
               );
             } else if (status === "delete_error") {
               hideRemoveCard();
-              showNotification(message, "bg-red-500");
+              showNotification(message, false);
             }
           }
         });
@@ -66,7 +66,7 @@ const RemoveCard: FC<RemoveCard> = ({ card, setCards, hideRemoveCard }) => {
             onClick={deleteCard}
           >
             <span>წაშლა</span>
-            <FaTrashAlt className="text-md"/>
+            <FaTrashAlt className="text-md" />
           </button>
         </ModalFooter>
       </Modal>
