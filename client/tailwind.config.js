@@ -8,6 +8,7 @@ export default {
       },
       colors: {
         "text-primary-blue": "#063776",
+        "text-secondary-blue": "#163165",
         "bg-main": "#F8F9FA",
         "button-bg-yellow": "#FFCA40",
         "border-color": "#EEEEEE",
@@ -17,6 +18,9 @@ export default {
         "text-gray-secondary": "#333333",
         "delete-button-red": "#EE4444",
         "button-green": "#15CD5C",
+        "text-gray-tertiary": "#ACB2BB",
+        "bg-color-4": "#F5F8FF",
+        "text-color-4": "#A0A0A0",
       },
       backgroundImage: {
         "bg-gradient":

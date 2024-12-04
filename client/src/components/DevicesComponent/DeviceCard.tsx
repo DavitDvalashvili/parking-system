@@ -82,7 +82,7 @@ const DeviceCard: FC<DeviceCard> = ({
 
   return (
     <div className="text-text-gray-primary w-[27.5rem]">
-      <div className="px-5 py-[1.375rem] bg-white rounded-[1.5rem] shadow-custom">
+      <div className="px-5 py-[1.375rem] bg-white rounded-[1.5rem] shadow-custom ">
         <div className="flex items-center justify-between gap-x-2 font-bold text-xl leading-6">
           <div className="flex items-center gap-x-[0.625rem]">
             <PiDeviceMobileSpeakerFill />
@@ -139,10 +139,7 @@ const DeviceCard: FC<DeviceCard> = ({
                         unifyFunction(e, device, switchDevice, toggleClientMode)
                       }
                     />
-                    <label
-                      htmlFor="client_mode_1"
-                      className="py-1 px-3 hover:bg-slate-100"
-                    >
+                    <label htmlFor="client_mode_1" className="py-1 px-3 ">
                       სტანდარტული
                     </label>
                     <input
@@ -156,10 +153,7 @@ const DeviceCard: FC<DeviceCard> = ({
                         unifyFunction(e, device, switchDevice, toggleClientMode)
                       }
                     />
-                    <label
-                      htmlFor="client_mode_2"
-                      className="py-1 px-3 hover:bg-slate-100 "
-                    >
+                    <label htmlFor="client_mode_2" className="py-1 px-3 ">
                       ღია
                     </label>
                     <input

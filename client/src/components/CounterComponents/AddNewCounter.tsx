@@ -97,7 +97,7 @@ const AddNewCounter: React.FC<AddNewCounterPropTypes> = ({
         </ModalHeader>
         <ModalBody>
           <div className="w-fit mx-auto mt-[2.625rem]">
-            <div className="flex gap-x-[1.875rem] w-full bg-red-700">
+            <div className="flex gap-x-[1.875rem] w-full ">
               <div className="w-[26.5rem]">
                 <input
                   type="text"
@@ -111,12 +111,12 @@ const AddNewCounter: React.FC<AddNewCounterPropTypes> = ({
               <div className="relative w-[11.438rem]">
                 <input
                   type="number"
-                  className="w-full p-4 pt-[0.938rem] border border-border-color-tertiary rounded-lg outline-none leading-[1.188rem]"
+                  className="w-full p-4 pt-[0.938rem] border border-border-color-tertiary rounded-lg outline-none leading-[1.188rem] peer"
                   placeholder="დრო"
                   value={counterVariant.tolerance_time}
                   onChange={handleChangeToleranceTime}
                 />
-                <div className="w-[11.438rem] max-h-[303px] rounded-lg bg-white border border-border-color-tertiary  absolute top-[54px] overflow-v peer-focus:block flex flex-col gap-4 cursor-pointer">
+                <div className="w-[11.438rem] max-h-[303px] rounded-lg bg-white border border-border-color-tertiary  absolute top-[54px] overflow-v hidden peer-focus:flex hover:flex flex-col gap-4 cursor-pointer">
                   {toleranceTimes
                     .filter((t: number) =>
                       t
@@ -137,22 +137,21 @@ const AddNewCounter: React.FC<AddNewCounterPropTypes> = ({
                 </div>
               </div>
             </div>
-            <hr className="mt-4 mb-2" />
-            <div className="w-full flex flex-col">
-              <div className="ml-2 mb-2">
-                <span className="text-sm italic text-gray-500">
+            <div className="w-full flex flex-col gap-[1rem] mt-5 mb-[1.875rem]">
+              <div className="text-[1rem] text-text-gray-tertiary mb-1">
+                <span>
                   დილის 9 საათიდან ღამის 11 საათამდე - ღამის 11 საათიდან დილის 9
                   საათამდე
                 </span>
               </div>
-              <div className="flex gap-x-2">
-                <span className="w-8/12 flex px-3 py-1 items-center border rounded-md text-gray-400 bg-gray-100">
+              <div className="flex gap-x-[1.875rem] w-full">
+                <span className="w-[26.5rem] text-text-color-4 p-4 pt-[0.938rem] border border-border-color-tertiary rounded-lg outline-none leading-[1.188rem] bg-bg-color-4">
                   პირველი 1 საათი
                 </span>
-                <div className="w-4/12">
+                <div className="w-[11.438rem]">
                   <input
                     type="number"
-                    className="w-full py-1 px-3 border border-slate-300 rounded-md outline-none"
+                    className="w-full p-4 pt-[0.938rem] border text-center border-border-color-tertiary rounded-lg outline-none leading-[1.188rem]"
                     placeholder="თანხა"
                     name="first_hours"
                     value={counterVariant.first_hours}
@@ -160,14 +159,14 @@ const AddNewCounter: React.FC<AddNewCounterPropTypes> = ({
                   />
                 </div>
               </div>
-              <div className="flex gap-x-2 mt-4">
-                <span className="w-8/12 flex px-3 py-1 items-center border rounded-md text-gray-400 bg-gray-100">
+              <div className="flex gap-x-[1.875rem] w-full">
+                <span className="w-[26.5rem] text-text-color-4 p-4 pt-[0.938rem] border border-border-color-tertiary rounded-lg outline-none leading-[1.188rem] bg-bg-color-4">
                   1 საათის შემდეგ 3 საათის განმავლობაში
                 </span>
-                <div className="w-4/12">
+                <div className="w-[11.438rem]">
                   <input
                     type="number"
-                    className="w-full py-1 px-3 border border-slate-300 rounded-md outline-none"
+                    className="w-full p-4 pt-[0.938rem] border text-center border-border-color-tertiary rounded-lg outline-none leading-[1.188rem]"
                     placeholder="თანხა"
                     name="during_3_hours"
                     value={counterVariant.during_3_hours}
@@ -175,14 +174,14 @@ const AddNewCounter: React.FC<AddNewCounterPropTypes> = ({
                   />
                 </div>
               </div>
-              <div className="flex gap-x-2 mt-4">
-                <span className="w-8/12 flex px-3 py-1 items-center border rounded-md text-gray-400 bg-gray-100">
+              <div className="flex gap-x-[1.875rem] w-full">
+                <span className="w-[26.5rem] text-text-color-4 p-4 pt-[0.938rem] border border-border-color-tertiary rounded-lg outline-none leading-[1.188rem] bg-bg-color-4">
                   4 საათის შემდეგ ღამის 11 საათამდე
                 </span>
-                <div className="w-4/12">
+                <div className="w-[11.438rem]">
                   <input
                     type="number"
-                    className="w-full py-1 px-3 border border-slate-300 rounded-md outline-none"
+                    className="w-full p-4 pt-[0.938rem] border text-center border-border-color-tertiary rounded-lg outline-none leading-[1.188rem]"
                     placeholder="თანხა"
                     name="until_23_oclock"
                     value={counterVariant.until_23_oclock}
@@ -190,14 +189,14 @@ const AddNewCounter: React.FC<AddNewCounterPropTypes> = ({
                   />
                 </div>
               </div>
-              <div className="flex gap-x-2 mt-4">
-                <span className="w-8/12 flex px-3 py-1 items-center border rounded-md text-gray-400 bg-gray-100">
+              <div className="flex gap-x-[1.875rem] w-full">
+                <span className="w-[26.5rem] text-text-color-4 p-4 pt-[0.938rem] border border-border-color-tertiary rounded-lg outline-none leading-[1.188rem] bg-bg-color-4">
                   ღამის 11 დან დილის 9 საათამდე
                 </span>
-                <div className="w-4/12">
+                <div className="w-[11.438rem]">
                   <input
                     type="number"
-                    className="w-full py-1 px-3 border border-slate-300 rounded-md outline-none"
+                    className="w-full p-4 pt-[0.938rem] border text-center border-border-color-tertiary rounded-lg outline-none leading-[1.188rem]"
                     placeholder="თანხა"
                     name="until_9_oclock"
                     value={counterVariant.until_9_oclock}
@@ -205,14 +204,14 @@ const AddNewCounter: React.FC<AddNewCounterPropTypes> = ({
                   />
                 </div>
               </div>
-              <div className="flex gap-x-2 mt-4">
-                <span className="w-8/12 flex px-3 py-1 items-center border rounded-md text-gray-400 bg-gray-100">
+              <div className="flex gap-x-[1.875rem] w-full">
+                <span className="w-[26.5rem] text-text-color-4 p-4 pt-[0.938rem] border border-border-color-tertiary rounded-lg outline-none leading-[1.188rem] bg-bg-color-4">
                   ყოველი 24 საათი
                 </span>
-                <div className="w-4/12">
+                <div className="w-[11.438rem]">
                   <input
                     type="number"
-                    className="w-full py-1 px-3 border border-slate-300 rounded-md outline-none"
+                    className="w-full p-4 pt-[0.938rem] border text-center border-border-color-tertiary rounded-lg outline-none leading-[1.188rem]"
                     placeholder="თანხა"
                     name="every_24_hours"
                     value={counterVariant.every_24_hours}
@@ -225,7 +224,9 @@ const AddNewCounter: React.FC<AddNewCounterPropTypes> = ({
         </ModalBody>
         <ModalFooter>
           <button
-            className="py-2 px-3 bg-green-500 text-white rounded-md disabled:bg-green-400/[.6]"
+            className="w-[9.625rem] h-10 flex justify-center items-center mx-auto
+            
+            bg-button-green font-bold text-[1rem] text-white rounded-[10px]"
             disabled={false}
             onClick={AddNewCounter}
           >

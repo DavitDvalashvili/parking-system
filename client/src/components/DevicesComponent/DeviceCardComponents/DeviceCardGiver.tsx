@@ -11,17 +11,17 @@ const DeviceCardGiver: FC<DeviceCardGiver> = ({
 }): JSX.Element => {
   return (
     <div className="border-0 border-t border-border-color-secondary pt-4 mt-4	">
-      <div className="flex justify-between items-center text-[1rem] font-bold">
+      <div className="flex justify-between items-center text-[1rem] font-medium">
         <span>ბარათები:</span>{" "}
         <span className="text-button-green">
           {deviceCardGiverObjects.device_cards_to_give_quantity + " " + "₾"}
         </span>
       </div>
-      <div className="flex justify-between items-center text-[1rem] font-bold mt-[0.625rem]">
+      <div className="flex justify-between items-center text-[1rem] font-medium mt-[0.625rem]">
         <span>დაკავებული:</span>{" "}
         <span>{deviceCardGiverObjects.device_cards_busy_quantity}</span>
       </div>
-      <div className="flex justify-between items-center group text-[1rem] font-bold mt-[0.625rem]">
+      <div className="flex justify-between items-center group text-[1rem] font-medium mt-[0.625rem]">
         <span>გადადებული:</span>
         <div className="flex items-center relative">
           <span className="group-hover:mr-[25px] duration-200 z-10">
