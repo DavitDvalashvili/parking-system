@@ -93,20 +93,18 @@ const FitCounter: FC<FitCounter> = ({
           onHide={hideFitDevice}
           className="flex justify-between items-center"
         >
-          <h5 className="font-bold text-[1.375rem] text-text-gray-primary px-[0.625rem]">
+          <h5 className="font-bold text-[1.375rem] text-gray-primary px-[0.625rem]">
             მოწყობილობის დამატება
           </h5>
         </ModalHeader>
         <ModalBody>
           <div className="px-[0.625rem]">
-            <div className="text-[1rem] font-medium text-text-primary-blue my-[1.375rem]">
+            <div className="text-[1rem] font-medium gray-primary-blue my-[1.375rem]">
               {selectedDevice.device_name}
             </div>
             {counters.map((counter, i) => {
               let bgColor =
-                counter.counter_id === selectedCounter
-                  ? "bg-text-primary-blue"
-                  : "";
+                counter.counter_id === selectedCounter ? "bg-primary-blue" : "";
               return (
                 <div key={i} className="rounded-lg shadow-custom">
                   <div className="flex items-center justify-between pl-[0.625rem] py-[1.063rem] pr-6 ">
@@ -121,7 +119,7 @@ const FitCounter: FC<FitCounter> = ({
                           <FiCheck className="text-white" />
                         )}
                       </div>
-                      <span className="text-text-gray-primary">
+                      <span className="text-gray-primary">
                         {counter.counter_name}
                       </span>
                     </div>
@@ -137,7 +135,7 @@ const FitCounter: FC<FitCounter> = ({
                     </span>
                   </div>
                   {selectedDropdown === i && (
-                    <div className="m-[0.625rem] border-t-[1px] text-text-gray-primary flex flex-col gap-5 pt-[0.938rem] pb-[1.563rem]">
+                    <div className="m-[0.625rem] border-t-[1px] text-gray-primary flex flex-col gap-5 pt-[0.938rem] pb-[1.563rem]">
                       <div className="flex px-3 items-center justify-between">
                         <span>პირველი 1 საათი</span>
                         <span className="text-button-green">

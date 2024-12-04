@@ -84,7 +84,7 @@ const EditDevice: FC<EditDevice> = ({
           onHide={hideEditDevice}
           className="flex justify-between items-center"
         >
-          <h5 className="font-bold text-[1.375rem] text-text-gray-primary ">
+          <h5 className="font-bold text-[1.375rem] text-gray-primary ">
             მოწყობილობის რედაქტირება
           </h5>
         </ModalHeader>
@@ -95,7 +95,7 @@ const EditDevice: FC<EditDevice> = ({
                 <input
                   type="text"
                   placeholder="მოწყობილობის დასახელება"
-                  className="w-full px-[10px] pt-[15px] pb-4 text-[1rem] leading-[19px] outline-none rounded-lg border border-text-primary-blue"
+                  className="w-full px-[10px] pt-[15px] pb-4 text-[1rem] leading-[19px] outline-none rounded-lg border border-primary-blue"
                   name="device_name"
                   value={deviceInfo.device_name}
                   onChange={handleChangeDeviceInfo}
@@ -103,7 +103,7 @@ const EditDevice: FC<EditDevice> = ({
                 <input
                   type="text"
                   placeholder="ID"
-                  className="w-[7.438rem] px-[10px] pt-[15px] text-[1rem] leading-[19px]  pb-4 outline-none rounded-lg border border-text-primary-blue "
+                  className="w-[7.438rem] px-[10px] pt-[15px] text-[1rem] leading-[19px]  pb-4 outline-none rounded-lg border border-primary-blue "
                   name="external_device_id"
                   value={deviceInfo.external_device_id}
                   onChange={handleChangeDeviceInfo}
@@ -115,7 +115,7 @@ const EditDevice: FC<EditDevice> = ({
                   <input
                     type="text"
                     placeholder="ხურდა (გასაცემი რაოდენობა)"
-                    className="w-full px-[10px] pt-[15px] pb-4 text-[1rem] leading-[19px] outline-none rounded-lg border border-text-primary-blue"
+                    className="w-full px-[10px] pt-[15px] pb-4 text-[1rem] leading-[19px] outline-none rounded-lg border border-primary-blue"
                     name="device_subsidiary_money_amount"
                     value={deviceInfo.device_subsidiary_money_amount}
                     onChange={handleChangeDeviceInfo}
@@ -125,7 +125,7 @@ const EditDevice: FC<EditDevice> = ({
                   <input
                     type="text"
                     placeholder="ბარათები (გასაცემი რაოდენობა)"
-                    className="w-full px-[10px] pt-[15px] pb-4 text-[1rem] leading-[19px] outline-none rounded-lg border border-text-primary-blue"
+                    className="w-full px-[10px] pt-[15px] pb-4 text-[1rem] leading-[19px] outline-none rounded-lg border border-primary-blue"
                     name="device_cards_to_give_quantity"
                     value={deviceInfo.device_cards_to_give_quantity}
                     onChange={handleChangeDeviceInfo}
@@ -145,7 +145,7 @@ const EditDevice: FC<EditDevice> = ({
                       checked={deviceInfo.has_subsidiary_money_receiver}
                       onChange={handleChangeDeviceInfo}
                     />
-                    <span className="text-[1rem] font-bold text-text-gray-primary">
+                    <span className="text-[1rem] font-bold text-gray-primary">
                       ხურდის მიმღები
                     </span>
                     <div className="relative w-9 h-5 bg-[#D9D9D9] peer-focus:outline-none rounded-full peer peer-checked:bg-[#63769A] rtl:peer-checked:after:-translate-x-full peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-400 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600"></div>
@@ -158,7 +158,7 @@ const EditDevice: FC<EditDevice> = ({
                       checked={deviceInfo.has_cash_receiver}
                       onChange={handleChangeDeviceInfo}
                     />
-                    <span className="text-[1rem] font-bold text-text-gray-primary">
+                    <span className="text-[1rem] font-bold text-gray-primary">
                       ქეშის მიმღები
                     </span>
                     <div className="relative w-9 h-5 bg-[#D9D9D9] peer-focus:outline-none rounded-full peer peer-checked:bg-[#63769A] rtl:peer-checked:after:-translate-x-full peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-400 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600"></div>
@@ -171,7 +171,7 @@ const EditDevice: FC<EditDevice> = ({
                       checked={deviceInfo.has_debit_card_transaction}
                       onChange={handleChangeDeviceInfo}
                     />
-                    <span className="text-[1rem] font-bold text-text-gray-primary">
+                    <span className="text-[1rem] font-bold text-gray-primary">
                       ბარათით გადახდა
                     </span>
                     <div className="relative w-9 h-5 bg-[#D9D9D9] peer-focus:outline-none rounded-full peer peer-checked:bg-[#63769A] rtl:peer-checked:after:-translate-x-full peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-400 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600"></div>
@@ -186,7 +186,7 @@ const EditDevice: FC<EditDevice> = ({
                   checked={deviceInfo.has_monitor}
                   onChange={handleChangeDeviceInfo}
                 />
-                <span className="text-[1rem] font-bold text-text-gray-primary">
+                <span className="text-[1rem] font-bold text-gray-primary">
                   ეკრანი
                 </span>
                 <div className="relative w-9 h-5 bg-gray-400 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-400 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-green-500"></div>

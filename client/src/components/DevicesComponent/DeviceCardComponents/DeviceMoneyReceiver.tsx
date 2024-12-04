@@ -11,7 +11,7 @@ const DeviceMoneyReceiver: FC<DeviceMoneyReceiver> = ({
   const { has_subsidiary_money_receiver } = deviceMoneyReceiverObjects;
 
   return (
-    <div className="border-0 border-t border-border-color-secondary pt-4 mt-4 flex flex-col">
+    <div className="border-0 border-t border-border-main-secondary pt-4 mt-4 flex flex-col">
       <div className="flex justify-between items-center">
         <span>ხურდის მიმღები:</span>{" "}
         {has_subsidiary_money_receiver ? (

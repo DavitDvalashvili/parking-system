@@ -63,25 +63,22 @@ const Login = () => {
         <p className="mt-4 mb-6 text-white text-[19px] max-w-[372px] font-normal">
           ყველაზე პოპულარული პარკინგის მენეგმენტის სისტემა
         </p>
-        <button className="text-4 leading-6 font-bold text-black inline bg-button-bg-yellow py-[1.125rem] px-[4.719rem] rounded-[1.25rem]">
+        <button className="text-4 leading-6 font-bold text-black inline bg-button-yellow py-[1.125rem] px-[4.719rem] rounded-[1.25rem]">
           {" "}
           გაიგე მეტი{" "}
         </button>
       </div>
       <div className="w-[38.2vw] h-full bg-bg-image bg-top-right bg-no-repeat flex justify-center items-center flex-col ">
         <div>
-          <h2 className="text-text-primary-blue text-[2.5rem] font-bold">
+          <h2 className="gray-primary-blue text-[2.5rem] font-bold">
             მოგესამლებით!
           </h2>
           <p className="mt-3.5 mb-8 font-medium text-[1.188rem] leading-[1.781rem]">
             გთხოვთ შეხვიდეთ სისტემაში
           </p>
-          <form
-            className="text-sm text-text-gray-secondary mb-5"
-            onSubmit={login}
-          >
-            <div className=" w-[21.625rem] h-[3.75rem] rounded-[1.875rem] border border-border-color py-[1.125rem] px-[1.625rem] flex justify-start items-center gap-3">
-              <FaLock className="text-text-gray-secondary opacity-30" />
+          <form className="text-sm text-gray-secondary mb-5" onSubmit={login}>
+            <div className=" w-[21.625rem] h-[3.75rem] rounded-[1.875rem] border border-border-main py-[1.125rem] px-[1.625rem] flex justify-start items-center gap-3">
+              <FaLock className="text-gray-secondary opacity-30" />
               <input
                 className="w-full h-full focus:outline-none "
                 type="text"
@@ -91,8 +88,8 @@ const Login = () => {
                 onChange={handleChangeAuthInfo}
               />
             </div>
-            <div className=" my-5 w-[21.625rem] h-[3.75rem] rounded-[1.875rem] border border-border-color py-[1.125rem] px-[1.625rem] flex justify-start items-center gap-3">
-              <FaLock className="text-text-gray-secondary opacity-30" />
+            <div className=" my-5 w-[21.625rem] h-[3.75rem] rounded-[1.875rem] border border-border-main py-[1.125rem] px-[1.625rem] flex justify-start items-center gap-3">
+              <FaLock className="text-gray-secondary opacity-30" />
               <input
                 className="w-full h-full focus:outline-none"
                 type="password"
@@ -104,12 +101,12 @@ const Login = () => {
             </div>
             <button
               type="submit"
-              className="text-white bg-text-primary-blue font-bold leading-[1.298rem] text-[1rem] w-[21.625rem] h-[3.75rem] rounded-[1.875rem]"
+              className="text-white bg-primary-blue font-bold leading-[1.298rem] text-[1rem] w-[21.625rem] h-[3.75rem] rounded-[1.875rem]"
             >
               შესვლა
             </button>
           </form>
-          <span className="text-center block text-text-gray-secondary text-sm opacity-30 cursor-pointer">
+          <span className="text-center block text-gray-secondary text-sm opacity-30 cursor-pointer">
             დაგავიწყდა პაროლი?
           </span>
         </div>

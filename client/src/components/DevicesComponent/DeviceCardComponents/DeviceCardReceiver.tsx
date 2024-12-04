@@ -9,7 +9,7 @@ const DeviceCardReceiver: FC<DeviceCardReceiver> = ({
   cardsToReceiveQuantity,
 }): JSX.Element => {
   return (
-    <div className="border-0 border-t border-border-color-secondary pt-4 mt-4">
+    <div className="border-0 border-t border-border-main-secondary pt-4 mt-4">
       <div className="flex justify-between items-center group">
         <span>მიღებული ბარათები:</span>
         <div className="flex items-center relative">

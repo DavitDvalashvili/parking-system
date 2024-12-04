@@ -48,21 +48,21 @@ const RemoveCard: FC<RemoveCard> = ({ card, setCards, hideRemoveCard }) => {
         <ModalHeader onHide={hideRemoveCard} />
         <ModalBody>
           <div className="w-[37.938rem]">
-            <div className="w-[4.5rem] h-[4.5rem] rounded-3xl font-bold text-[53px] bg-delete-button-red flex justify-center items-center mx-auto mt-5">
+            <div className="w-[4.5rem] h-[4.5rem] rounded-3xl font-bold text-[53px] bg-button-red flex justify-center items-center mx-auto mt-5">
               <img
                 src="./Delete.svg"
                 alt="Delete"
                 className="h-[2.063rem] w-[2.063rem]"
               />
             </div>
-            <div className="text-xl leading-6 text-text-gray-primary text-center font-bold mt-[1.875rem] mb-8">
+            <div className="text-xl leading-6 text-gray-primary text-center font-bold mt-[1.875rem] mb-8">
               ნამდვილად გსურთ ბარათის წაშლა ?
             </div>
           </div>
         </ModalBody>
         <ModalFooter>
           <button
-            className="w-[8rem] h-10 bg-delete-button-red rounded-[0.625rem] flex justify-between font-bold mx-auto text-white text-[1rem] leading-5 px-[1.688rem] py-[0.625rem] mb-[2.563rem]"
+            className="w-[8rem] h-10 bg-button-red rounded-[0.625rem] flex justify-between font-bold mx-auto text-white text-[1rem] leading-5 px-[1.688rem] py-[0.625rem] mb-[2.563rem]"
             onClick={deleteCard}
           >
             <span>წაშლა</span>

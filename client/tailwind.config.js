@@ -7,20 +7,23 @@ export default {
         firago: ["Firago", "sans-serif"],
       },
       colors: {
-        "text-primary-blue": "#063776",
-        "text-secondary-blue": "#163165",
-        "bg-main": "#F8F9FA",
-        "button-bg-yellow": "#FFCA40",
-        "border-color": "#EEEEEE",
-        "border-color-secondary": "#63769A",
-        "border-color-tertiary": "#E0EAFC",
-        "text-gray-primary": "#334155",
-        "text-gray-secondary": "#333333",
-        "delete-button-red": "#EE4444",
+        "primary-blue": "#063776",
+        "secondary-blue": "#163165",
+        "gray-primary": "#334155",
+        "gray-secondary": "#333333",
+        "gray-tertiary": "#ACB2BB",
+        "gray-light": "#A0A0A0",
+        //  border colors
+        "border-primary": "#EEEEEE",
+        "border-secondary": "#63769A",
+        "border-tertiary": "#E0EAFC",
+        //button colors
+        "button-red": "#EE4444",
         "button-green": "#15CD5C",
-        "text-gray-tertiary": "#ACB2BB",
-        "bg-color-4": "#F5F8FF",
-        "text-color-4": "#A0A0A0",
+        "button-yellow": "#FFCA40",
+        //background colors
+        "bg-primary": "#F8F9FA",
+        "bg-secondary": "#F5F8FF",
       },
       backgroundImage: {
         "bg-gradient":

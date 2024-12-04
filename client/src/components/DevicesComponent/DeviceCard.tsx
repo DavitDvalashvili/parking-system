@@ -81,7 +81,7 @@ const DeviceCard: FC<DeviceCard> = ({
   };
 
   return (
-    <div className="text-text-gray-primary w-[27.5rem]">
+    <div className="text-gray-primary w-[27.5rem]">
       <div className="px-5 py-[1.375rem] bg-white rounded-[1.5rem] shadow-custom ">
         <div className="flex items-center justify-between gap-x-2 font-bold text-xl leading-6">
           <div className="flex items-center gap-x-[0.625rem]">
@@ -93,10 +93,10 @@ const DeviceCard: FC<DeviceCard> = ({
           <div className="flex justify-between items-center">
             <span>{device.device_name}</span>
           </div>
-          <div className="flex justify-between items-center border-0 border-t border-border-color-secondary pt-4 mt-4">
+          <div className="flex justify-between items-center border-0 border-t border-border-main-secondary pt-4 mt-4">
             <span>ტიპი:</span> <span>{device.device_type.devicetype_name}</span>
           </div>
-          <div className="flex justify-between items-center border-0 border-t border-border-color-secondary pt-4 mt-4">
+          <div className="flex justify-between items-center border-0 border-t border-border-main-secondary pt-4 mt-4">
             <span>მოწყობილობის ID:</span>{" "}
             <span>{device.external_device_id || "დაურეგისტრირებელი"}</span>
           </div>
@@ -113,7 +113,7 @@ const DeviceCard: FC<DeviceCard> = ({
           />
         </div>
         <div className="px-3 py-2">
-          <div className="border-0 border-t border-border-color-secondary pt-4 mt-4 text-text-gray-primary">
+          <div className="border-0 border-t border-border-main-secondary pt-4 mt-4 text-gray-primary">
             <div className="flex items-center justify-between mt-1">
               <div className="relative">
                 <div
@@ -270,7 +270,7 @@ const DeviceCard: FC<DeviceCard> = ({
           </div>
         </div>
         {device.device_type.devicetype_type === "card-receiver" && (
-          <div className="border-0 border-t border-border-color-secondary pt-4 mt-4 text-text-gray-primary">
+          <div className="border-0 border-t border-border-main-secondary pt-4 mt-4 text-gray-primary">
             <button className=" " onClick={() => showFitDevice(device)}>
               მრიცხველის მორგება
             </button>

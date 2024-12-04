@@ -104,23 +104,23 @@ const EditCard: FC<EditCard> = ({
       <Modal>
         <ModalHeader title="ბარათის რედაქტირება" onHide={hideEditCard} />
         <ModalBody>
-          <div className="text-xl leading-6 text-text-gray-primary text-center font-bold mb-9 w-[42.938rem]">
+          <div className="text-xl leading-6 text-gray-primary text-center font-bold mb-9 w-[42.938rem]">
             რედაქტირება
           </div>
           <div className="flex flex-col justify-center items-center">
             <div className="relative text-center">
               <div
-                className=" flex justify-between items-center mb-4 px-[1.375rem] h-[3.125rem] w-[16.188rem] bg-white rounded-[0.625rem] font-bold text-base leading-5 cursor-pointer border-[0.5px] border-text-primary-blue text-gray-primary"
+                className=" flex justify-between items-center mb-4 px-[1.375rem] h-[3.125rem] w-[16.188rem] bg-white rounded-[0.625rem] font-bold text-base leading-5 cursor-pointer border-[0.5px] border-primary-blue gray-primary"
                 onClick={toggleSelectRole}
               >
-                <span className="text-text-gray-primary">
+                <span className="text-gray-primary">
                   {selectedRole?.role_name_description}
                 </span>
                 {dropdownRole && <IoIosArrowUp className="w-6 h-6" />}
                 {!dropdownRole && <IoIosArrowDown className="w-6 h-6" />}
               </div>
               {dropdownRole && (
-                <div className="flex flex-col absolute z-10 bg-white top-[0%] rounded-[0.625rem] font-bold text-base leading-5 cursor-pointer border-[0.5px] border-text-primary-blue text-gray-primary px-[1.375rem] w-[16.188rem]">
+                <div className="flex flex-col absolute z-10 bg-white top-[0%] rounded-[0.625rem] font-bold text-base leading-5 cursor-pointer border-[0.5px] border-primary-blue gray-primary px-[1.375rem] w-[16.188rem]">
                   {roles
                     .sort((a, b) =>
                       a === selectedRole ? -1 : b === selectedRole ? 1 : 0
@@ -156,7 +156,7 @@ const EditCard: FC<EditCard> = ({
           <input
             type="text"
             placeholder="ბარათის ნომერი"
-            className="block mx-auto border-[0.5px] mb-[1.438rem] border-text-primary-blue font-bold px-[1.375rem] text-base leading-[1.25rem] text-text-gray-primary h-[3.125rem] w-[16.188rem] focus:outline-none rounded-[0.625rem]"
+            className="block mx-auto border-[0.5px] mb-[1.438rem] border-primary-blue font-bold px-[1.375rem] text-base leading-[1.25rem] text-gray-primary h-[3.125rem] w-[16.188rem] focus:outline-none rounded-[0.625rem]"
             value={selectedCard.card_uid}
             onChange={handleChangeCard}
           />

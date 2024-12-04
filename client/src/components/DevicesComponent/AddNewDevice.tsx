@@ -91,7 +91,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
           onHide={hideAddNewDevice}
           className="flex justify-between items-center"
         >
-          <h5 className="font-bold text-[1.375rem] text-text-gray-primary ">
+          <h5 className="font-bold text-[1.375rem] text-gray-primary ">
             მოწყობილობის დამატება
           </h5>
         </ModalHeader>
@@ -105,8 +105,8 @@ const AddNewDevice: FC<AddNewDevice> = ({
                       htmlFor={`deviceType${i}`}
                       className={`w-full h-full block text-center py-4 rounded-[0.625rem] leading-[1.188rem] cursor-pointer ${
                         deviceInfo.device_type.devicetype_id === d.devicetype_id
-                          ? "bg-text-primary-blue text-white"
-                          : "text-text-gray-primary border-text-primary-blue border"
+                          ? "bg-primary-blue text-white"
+                          : "text-gray-primary border-primary-blue border"
                       }`}
                     >
                       {d.devicetype_name}
@@ -126,7 +126,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
               <input
                 type="text"
                 placeholder="მოწყობილობის დასახელება"
-                className="w-[18.75rem] p-4 outline-none rounded-[0.625rem] border-[0.5px] border-text-primary-blue font-firago"
+                className="w-[18.75rem] p-4 outline-none rounded-[0.625rem] border-[0.5px] border-primary-blue font-firago"
                 name="device_name"
                 value={deviceInfo.device_name}
                 onChange={handleChangeDeviceInfo}
@@ -134,7 +134,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
               <input
                 type="text"
                 placeholder="ID"
-                className="w-[7.438rem] p-4 outline-none rounded-[0.625rem] border-[0.5px] border-text-primary-blue font-firago"
+                className="w-[7.438rem] p-4 outline-none rounded-[0.625rem] border-[0.5px] border-primary-blue font-firago"
                 name="external_device_id"
                 value={deviceInfo.external_device_id}
                 onChange={handleChangeDeviceInfo}
@@ -145,7 +145,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
                 <input
                   type="text"
                   placeholder="ხურდა (გასაცემი რაოდენობა)"
-                  className="w-[18.75rem] p-4 outline-none rounded-[0.625rem] border-[0.5px] border-text-primary-blue font-firago"
+                  className="w-[18.75rem] p-4 outline-none rounded-[0.625rem] border-[0.5px] border-primary-blue font-firago"
                   name="device_subsidiary_money_amount"
                   value={deviceInfo.device_subsidiary_money_amount}
                   onChange={handleChangeDeviceInfo}
@@ -155,7 +155,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
                 <input
                   type="text"
                   placeholder="ბარათები (გასაცემი რაოდენობა)"
-                  className="w-[18.75rem] p-4 outline-none rounded-[0.625rem] border-[0.5px] border-text-primary-blue font-firago"
+                  className="w-[18.75rem] p-4 outline-none rounded-[0.625rem] border-[0.5px] border-primary-blue font-firago"
                   name="device_cards_to_give_quantity"
                   value={deviceInfo.device_cards_to_give_quantity}
                   onChange={handleChangeDeviceInfo}
@@ -173,7 +173,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
                       checked={deviceInfo.has_subsidiary_money_receiver}
                       onChange={handleChangeDeviceInfo}
                     />
-                    <span className="text-[1rem] font-bold text-text-gray-primary">
+                    <span className="text-[1rem] font-bold text-gray-primary">
                       ხურდის მიმღები
                     </span>
                     <div className="relative w-9 h-5 bg-[#D9D9D9] peer-focus:outline-none rounded-full peer peer-checked:bg-[#63769A] rtl:peer-checked:after:-translate-x-full peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-400 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600"></div>
@@ -186,7 +186,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
                       checked={deviceInfo.has_cash_receiver}
                       onChange={handleChangeDeviceInfo}
                     />
-                    <span className="text-[1rem] font-bold text-text-gray-primary">
+                    <span className="text-[1rem] font-bold text-gray-primary">
                       ქეშის მიმღები
                     </span>
                     <div className="relative w-9 h-5 bg-[#D9D9D9] peer-focus:outline-none rounded-full peer peer-checked:bg-[#63769A] rtl:peer-checked:after:-translate-x-full peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-400 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600"></div>
@@ -199,7 +199,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
                       checked={deviceInfo.has_debit_card_transaction}
                       onChange={handleChangeDeviceInfo}
                     />
-                    <span className="text-[1rem] font-bold text-text-gray-primary">
+                    <span className="text-[1rem] font-bold text-gray-primary">
                       ბარათით გადახდა
                     </span>
                     <div className="relative w-9 h-5 bg-[#D9D9D9] peer-focus:outline-none rounded-full peer peer-checked:bg-[#63769A] rtl:peer-checked:after:-translate-x-full peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-400 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600"></div>
@@ -214,7 +214,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
                   checked={deviceInfo.has_monitor}
                   onChange={handleChangeDeviceInfo}
                 />
-                <span className="text-[1rem] font-bold text-text-gray-primary">
+                <span className="text-[1rem] font-bold text-gray-primary">
                   ეკრანი
                 </span>
                 <div className="relative w-9 h-5 bg-[#D9D9D9] peer-focus:outline-none rounded-full peer peer-checked:bg-[#63769A] rtl:peer-checked:after:-translate-x-full peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-400 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600"></div>

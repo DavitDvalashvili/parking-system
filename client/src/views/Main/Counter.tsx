@@ -49,13 +49,13 @@ const Counter = (): JSX.Element => {
   return (
     <div className="p-10 flex flex-col flex-1 gap-y-[5rem]">
       <div className="flex gap-x-[1.875rem]">
-        <div className="bg-white px-[0.813rem] py-[0.625rem] flex justify-center items-center gap-5 rounded-[0.625rem] text-text-gray-primary ">
+        <div className="bg-white px-[0.813rem] py-[0.625rem] flex justify-center items-center gap-5 rounded-[0.625rem] text-gray-primary ">
           <IoMdKeypad className="w-[1.813rem] h-[1.813rem]" />
           <span className="font-bold text-[1.25rem]">მრიცხველი</span>
         </div>
         <button
           onClick={showAddNewCounter}
-          className="bg-white py-[0.938rem] px-[0.875rem] flex justify-center items-center gap-[0.625rem] rounded-[0.625rem] text-text-gray-primary text-[1.25rem] font-bold "
+          className="bg-white py-[0.938rem] px-[0.875rem] flex justify-center items-center gap-[0.625rem] rounded-[0.625rem] text-gray-primary text-[1.25rem] font-bold "
         >
           <span>მრიცხველის დამატება</span>
           <HiOutlinePlusSm className="w-[1.563rem] h-[1.563rem] cursor-pointer" />
@@ -65,7 +65,7 @@ const Counter = (): JSX.Element => {
         {counters?.map((counter, i) => {
           return (
             <div key={i} className="w-[27.5rem]">
-              <div className="px-5 py-[1.375rem] bg-white w-full rounded-[1.5rem] text-text-gray-secondary shadow-custom">
+              <div className="px-5 py-[1.375rem] bg-white w-full rounded-[1.5rem] text-gray-secondary shadow-custom">
                 <div className="flex gap-x-[0.813rem] items-center text-[1.25rem] font-bold leading-[1.5rem]">
                   <IoMdKeypad />
                   მრიცხველი {i + 1}
@@ -75,7 +75,7 @@ const Counter = (): JSX.Element => {
                     {counter.counter_name}
                   </span>
                 </div>
-                <div className="border-0 border-t border-border-color-secondary mt-5 font-medium flex flex-col gap-5 text-[1rem] py-4 ">
+                <div className="border-0 border-t border-border-main-secondary mt-5 font-medium flex flex-col gap-5 text-[1rem] py-4 ">
                   <div className="flex items-center justify-between leading-[1.188rem]">
                     <span>პირველი 1 საათი</span>{" "}
                     <span className="text-button-green">
@@ -107,7 +107,7 @@ const Counter = (): JSX.Element => {
                     </span>
                   </div>
                 </div>
-                <div className="flex items-center justify-between  border-0 border-t border-border-color-secondary pt-4 font-bold">
+                <div className="flex items-center justify-between  border-0 border-t border-border-main-secondary pt-4 font-bold">
                   <span>დრო:</span>{" "}
                   <span className="">{counter.tolerance_time}წთ</span>
                 </div>

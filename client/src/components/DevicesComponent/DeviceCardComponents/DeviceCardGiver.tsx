@@ -10,7 +10,7 @@ const DeviceCardGiver: FC<DeviceCardGiver> = ({
   deviceCardGiverObjects,
 }): JSX.Element => {
   return (
-    <div className="border-0 border-t border-border-color-secondary pt-4 mt-4	">
+    <div className="border-0 border-t border-border-main-secondary pt-4 mt-4	">
       <div className="flex justify-between items-center text-[1rem] font-medium">
         <span>ბარათები:</span>{" "}
         <span className="text-button-green">

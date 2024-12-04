@@ -1,7 +1,7 @@
 const DashboardParkingDevices = (): JSX.Element => {
   return (
     <div>
-      <div className="flex gap-x-10 text-text-primary-blue font-bold ">
+      <div className="flex gap-x-10 gray-primary-blue font-bold ">
         <div className="bg-white rounded-[0.625rem] w-[24.688rem] text-xl ">
           <div className="flex justify-start items-center gap-[2.938rem]">
             <img src="/device.svg" alt="device" />
@@ -72,7 +72,7 @@ const DashboardParkingDevices = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <div className="text-text-primary-blue font-bold flex flex-col gap-5 mt-[2rem]">
+      <div className="gray-primary-blue font-bold flex flex-col gap-5 mt-[2rem]">
         <span>
           თავისუფალი
           <span className="bg-button-green ml-[1.375rem] text-white rounded-md px-[0.438rem] h-[1.625rem]">
@@ -81,7 +81,7 @@ const DashboardParkingDevices = (): JSX.Element => {
         </span>
         <span>
           დაკავებული
-          <span className="bg-delete-button-red ml-[1.375rem] text-white rounded-md px-[0.438rem] h-[1.625rem]">
+          <span className="bg-button-red ml-[1.375rem] text-white rounded-md px-[0.438rem] h-[1.625rem]">
             20
           </span>
         </span>

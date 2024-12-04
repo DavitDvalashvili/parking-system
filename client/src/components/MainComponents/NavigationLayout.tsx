@@ -88,14 +88,14 @@ const NavigationLayout = () => {
         <img src="./logoBlue.svg" alt="logo" />
       </div>
       <div>
-        <ul className="text-center w-full flex flex-col flex-1  text-text-gray-primary text-xl font-bold leading-6 gap-[2.125rem]">
+        <ul className="text-center w-full flex flex-col flex-1  text-gray-primary text-xl font-bold leading-6 gap-[2.125rem]">
           {NavMenu.map((item: NavMenuObject, i: number) => {
             const textColor: string =
               item.path === location.pathname
                 ? "text-white"
-                : "text-text-gray-primary";
+                : "text-gray-primary";
             const bgColor: string =
-              item.path === location.pathname ? "bg-text-primary-blue" : "";
+              item.path === location.pathname ? "bg-primary-blue" : "";
             return (
               <li className="flex" key={i}>
                 <Link

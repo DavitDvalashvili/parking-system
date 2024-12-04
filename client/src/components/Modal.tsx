@@ -45,7 +45,7 @@ export const ModalHeader: React.FC<modalHeaderTypes> = ({
         <>
           {props.children}
           <ImCancelCircle
-            className="w-5 h-5 text-text-gray-primary cursor-pointer ml-auto "
+            className="w-5 h-5 text-gray-primary cursor-pointer ml-auto "
             onClick={onHide}
           />
         </>

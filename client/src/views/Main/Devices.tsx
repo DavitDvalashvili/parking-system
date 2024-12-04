@@ -168,11 +168,11 @@ const Devices = (): JSX.Element => {
   return (
     <div className="p-10 flex flex-col flex-1 gap-y-10 overflow-v">
       <div className=" flex gap-[1.875rem] font-bold text-xl leading-normal">
-        <div className="bg-white pt-[0.625rem] pb-[0.563rem] px-[0.875rem] flex justify-center items-center gap-5 rounded-[0.625rem] text-text-gray-primary w-[17.125rem]">
+        <div className="bg-white pt-[0.625rem] pb-[0.563rem] px-[0.875rem] flex justify-center items-center gap-5 rounded-[0.625rem] text-gray-primary w-[17.125rem]">
           <PiDeviceMobileSpeakerFill className="w-[1.875rem] h-[1.875rem]" />
           <span>მოწყობილობები</span>
         </div>
-        <div className="bg-white px-[0.875rem] py-3 flex justify-center items-center gap-[0.625rem] rounded-[0.625rem] text-text-gray-primary text-base w-[18.813rem]">
+        <div className="bg-white px-[0.875rem] py-3 flex justify-center items-center gap-[0.625rem] rounded-[0.625rem] text-gray-primary text-base w-[18.813rem]">
           <span>მოწყობილობის დამატება</span>
           <HiOutlinePlusSm
             className="w-[1.563rem] h-[1.563rem] cursor-pointer"

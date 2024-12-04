@@ -19,7 +19,7 @@ const Notification = (): JSX.Element => {
         <ModalBody>
           <div className="w-[37.938rem]">
             <div
-              className={`text-xl leading-6 text-text-gray-primary text-center font-bold mt-[1.875rem] mb-8 `}
+              className={`text-xl leading-6 text-gray-primary text-center font-bold mt-[1.875rem] mb-8 `}
             >
               {notiFicationMessage}
               {notiFicationSuccess}
