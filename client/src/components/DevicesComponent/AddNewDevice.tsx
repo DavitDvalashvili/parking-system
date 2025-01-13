@@ -103,7 +103,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
                   <div key={i} className={`w-[15.813rem] `}>
                     <label
                       htmlFor={`deviceType${i}`}
-                      className={`w-full h-full block text-center py-4 rounded-[0.625rem] leading-[1.188rem] cursor-pointer ${
+                      className={`w-full h-full block text-center py-4 rounded-primary leading-[1.188rem] cursor-pointer ${
                         deviceInfo.device_type.devicetype_id === d.devicetype_id
                           ? "bg-primary-blue text-white"
                           : "text-gray-primary border-primary-blue border"
@@ -126,7 +126,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
               <input
                 type="text"
                 placeholder="მოწყობილობის დასახელება"
-                className="w-[18.75rem] p-4 outline-none rounded-[0.625rem] border-[0.5px] border-primary-blue font-firago"
+                className="w-[18.75rem] p-4 outline-none rounded-primary border-[0.5px] border-primary-blue font-firago"
                 name="device_name"
                 value={deviceInfo.device_name}
                 onChange={handleChangeDeviceInfo}
@@ -134,7 +134,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
               <input
                 type="text"
                 placeholder="ID"
-                className="w-[7.438rem] p-4 outline-none rounded-[0.625rem] border-[0.5px] border-primary-blue font-firago"
+                className="w-[7.438rem] p-4 outline-none rounded-primary border-[0.5px] border-primary-blue font-firago"
                 name="external_device_id"
                 value={deviceInfo.external_device_id}
                 onChange={handleChangeDeviceInfo}
@@ -145,7 +145,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
                 <input
                   type="text"
                   placeholder="ხურდა (გასაცემი რაოდენობა)"
-                  className="w-[18.75rem] p-4 outline-none rounded-[0.625rem] border-[0.5px] border-primary-blue font-firago"
+                  className="w-[18.75rem] p-4 outline-none rounded-primary border-[0.5px] border-primary-blue font-firago"
                   name="device_subsidiary_money_amount"
                   value={deviceInfo.device_subsidiary_money_amount}
                   onChange={handleChangeDeviceInfo}
@@ -155,7 +155,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
                 <input
                   type="text"
                   placeholder="ბარათები (გასაცემი რაოდენობა)"
-                  className="w-[18.75rem] p-4 outline-none rounded-[0.625rem] border-[0.5px] border-primary-blue font-firago"
+                  className="w-[18.75rem] p-4 outline-none rounded-primary border-[0.5px] border-primary-blue font-firago"
                   name="device_cards_to_give_quantity"
                   value={deviceInfo.device_cards_to_give_quantity}
                   onChange={handleChangeDeviceInfo}
@@ -224,7 +224,7 @@ const AddNewDevice: FC<AddNewDevice> = ({
         </ModalBody>
         <ModalFooter>
           <button
-            className="w-[9.625rem] h-10 bg-button-green text-white text-[1rem] rounded-[0.625rem] block mx-auto"
+            className="w-[9.625rem] h-10 bg-button-green text-white text-[1rem] rounded-primary block mx-auto"
             onClick={addNewDevice}
           >
             დამატება

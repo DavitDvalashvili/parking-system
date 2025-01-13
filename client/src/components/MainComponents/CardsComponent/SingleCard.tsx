@@ -14,14 +14,14 @@ const SingleCard = ({
   showRemoveCard,
 }: singleCardPropTypes): JSX.Element => {
   return (
-    <div className="w-full h-[14.688rem] rounded-[0.625rem] overflow-hidden bg-white">
+    <div className="w-full h-[14.688rem] rounded-primary overflow-hidden bg-white">
       <div className="h-fit p-4">
         <div className="flex justify-between items-start ">
           <RiPencilFill
             className="w-6 h-6 cursor-pointer"
             onClick={showEditCard}
           />
-          <div className="bg-gray-primary w-[161.44px] h-[102.63px] rounded-[0.625rem] px-[8.73px] py-[15.18px] flex flex-col justify-end mt-0.5">
+          <div className="bg-gray-primary w-[161.44px] h-[102.63px] rounded-primary px-[8.73px] py-[15.18px] flex flex-col justify-end mt-0.5">
             <img
               src="/logoWhite.svg"
               alt="logo"

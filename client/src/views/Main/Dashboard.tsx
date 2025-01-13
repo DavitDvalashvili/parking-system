@@ -14,7 +14,7 @@ const Dashboard = () => {
       <div className="flex gap-[1.875rem]">
         <div
           className="text-gray-primary font-bold text-xl leading-[1.875rem] flex justify-center items-center gap-6 bg-white 
-        rounded-[0.625rem] px-[0.813rem] py-[0.625rem]"
+          rounded-primary px-[0.813rem] py-[0.625rem]"
         >
           <IoIosCard className="w-[1.563rem]" />
           <span>ბარათები</span>

@@ -93,7 +93,7 @@ const AddCardForm: FC<CardForm> = ({ setCards }): JSX.Element => {
 
   return (
     <div className="flex justify-between items-center max-w-[40rem] w-full">
-      <div className="flex justify-center item-center gap-4 px-[0.875rem] py-[0.813rem] bg-white rounded-[0.625rem] font-medium text-base leading-5">
+      <div className="flex justify-center item-center gap-4 px-[0.875rem] py-[0.813rem] bg-white rounded-primary font-medium text-base leading-5">
         <input
           type="text"
           className="w-[10.563rem] focus:outline-none"
@@ -109,7 +109,7 @@ const AddCardForm: FC<CardForm> = ({ setCards }): JSX.Element => {
 
       <div className="relative ms-5">
         <div
-          className="flex justify-center items-center gap-4 px-[0.875rem] py-[0.813rem] bg-white rounded-[0.625rem] font-bold text-base leading-5 cursor-pointer"
+          className="flex justify-center items-center gap-4 px-[0.875rem] py-[0.813rem] bg-white rounded-primary font-bold text-base leading-5 cursor-pointer"
           onClick={toggleSelectRole}
         >
           <span>{selectedRole?.role_name_description}</span>

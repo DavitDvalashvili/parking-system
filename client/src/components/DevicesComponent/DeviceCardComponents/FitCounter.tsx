@@ -64,7 +64,7 @@ const FitCounter: FC<FitCounter> = ({
                 }
               });
             });
-            showNotification(message);
+            showNotification(message, false);
             hideFitDevice();
           }
         }

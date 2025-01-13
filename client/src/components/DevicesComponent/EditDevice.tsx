@@ -196,7 +196,7 @@ const EditDevice: FC<EditDevice> = ({
         </ModalBody>
         <ModalFooter>
           <button
-            className="w-[9.625rem] h-10 bg-button-green text-white text-[1rem] rounded-[0.625rem] block mx-auto"
+            className="w-[9.625rem] h-10 bg-button-green text-white text-[1rem] rounded-primary block mx-auto"
             onClick={editDevice}
           >
             შენახვა

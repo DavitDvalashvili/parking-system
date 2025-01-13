@@ -77,7 +77,7 @@ const Login = () => {
             გთხოვთ შეხვიდეთ სისტემაში
           </p>
           <form className="text-sm text-gray-secondary mb-5" onSubmit={login}>
-            <div className=" w-[21.625rem] h-[3.75rem] rounded-[1.875rem] border border-border-main py-[1.125rem] px-[1.625rem] flex justify-start items-center gap-3">
+            <div className=" w-[21.625rem] h-[3.75rem] rounded-secondary border border-border-main py-[1.125rem] px-[1.625rem] flex justify-start items-center gap-3">
               <FaLock className="text-gray-secondary opacity-30" />
               <input
                 className="w-full h-full focus:outline-none "
@@ -88,7 +88,7 @@ const Login = () => {
                 onChange={handleChangeAuthInfo}
               />
             </div>
-            <div className=" my-5 w-[21.625rem] h-[3.75rem] rounded-[1.875rem] border border-border-main py-[1.125rem] px-[1.625rem] flex justify-start items-center gap-3">
+            <div className=" my-5 w-[21.625rem] h-[3.75rem] rounded-secondary border border-border-main py-[1.125rem] px-[1.625rem] flex justify-start items-center gap-3">
               <FaLock className="text-gray-secondary opacity-30" />
               <input
                 className="w-full h-full focus:outline-none"
@@ -101,7 +101,7 @@ const Login = () => {
             </div>
             <button
               type="submit"
-              className="text-white bg-primary-blue font-bold leading-[1.298rem] text-[1rem] w-[21.625rem] h-[3.75rem] rounded-[1.875rem]"
+              className="text-white bg-primary-blue font-bold leading-[1.298rem] text-[1rem] w-[21.625rem] h-[3.75rem] rounded-secondary"
             >
               შესვლა
             </button>

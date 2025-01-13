@@ -49,13 +49,13 @@ const Counter = (): JSX.Element => {
   return (
     <div className="p-10 flex flex-col flex-1 gap-y-[5rem]">
       <div className="flex gap-x-[1.875rem]">
-        <div className="bg-white px-[0.813rem] py-[0.625rem] flex justify-center items-center gap-5 rounded-[0.625rem] text-gray-primary ">
+        <div className="bg-white px-[0.813rem] py-[0.625rem] flex justify-center items-center gap-5 rounded-primary text-gray-primary ">
           <IoMdKeypad className="w-[1.813rem] h-[1.813rem]" />
           <span className="font-bold text-[1.25rem]">მრიცხველი</span>
         </div>
         <button
           onClick={showAddNewCounter}
-          className="bg-white py-[0.938rem] px-[0.875rem] flex justify-center items-center gap-[0.625rem] rounded-[0.625rem] text-gray-primary text-[1.25rem] font-bold "
+          className="bg-white py-[0.938rem] px-[0.875rem] flex justify-center items-center gap-[0.625rem] rounded-primary text-gray-primary text-[1.25rem] font-bold "
         >
           <span>მრიცხველის დამატება</span>
           <HiOutlinePlusSm className="w-[1.563rem] h-[1.563rem] cursor-pointer" />

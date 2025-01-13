@@ -68,7 +68,7 @@ const DeleteDevice: FC<DeleteDevice> = ({
         </ModalBody>
         <ModalFooter>
           <button
-            className="w-[8rem] h-10 bg-button-red rounded-[0.625rem] flex justify-between font-bold mx-auto text-white text-[1rem] leading-5 px-[1.688rem] py-[0.625rem] mb-[2.563rem]"
+            className="w-[8rem] h-10 bg-button-red rounded-primary flex justify-between font-bold mx-auto text-white text-[1rem] leading-5 px-[1.688rem] py-[0.625rem] mb-[2.563rem]"
             onClick={removeDevice}
           >
             წაშლა <FaTrash />

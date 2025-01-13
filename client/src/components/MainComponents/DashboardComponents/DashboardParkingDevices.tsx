@@ -2,7 +2,7 @@ const DashboardParkingDevices = (): JSX.Element => {
   return (
     <div>
       <div className="flex gap-x-10 gray-primary-blue font-bold ">
-        <div className="bg-white rounded-[0.625rem] w-[24.688rem] text-xl ">
+        <div className="bg-white rounded-primary w-[24.688rem] text-xl ">
           <div className="flex justify-start items-center gap-[2.938rem]">
             <img src="/device.svg" alt="device" />
             <h5>მოწყობილობა 1</h5>
@@ -25,7 +25,7 @@ const DashboardParkingDevices = (): JSX.Element => {
             </span>
           </div>
         </div>
-        <div className="bg-white rounded-[0.625rem] w-[24.688rem] text-xl shadow-custom">
+        <div className="bg-white rounded-primary w-[24.688rem] text-xl shadow-custom">
           <div className="flex justify-start items-center gap-[2.938rem]">
             <img src="/device.svg" alt="device" />
             <h5>მოწყობილობა 1</h5>
@@ -48,7 +48,7 @@ const DashboardParkingDevices = (): JSX.Element => {
             </span>
           </div>
         </div>
-        <div className="bg-white rounded-[0.625rem] w-[24.688rem] text-xl ">
+        <div className="bg-white rounded-primary w-[24.688rem] text-xl ">
           <div className="flex justify-start items-center gap-[2.938rem]">
             <img src="/device.svg" alt="device" />
             <h5>მოწყობილობა 1</h5>

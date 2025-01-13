@@ -25,6 +25,10 @@ export default {
         "bg-primary": "#F8F9FA",
         "bg-secondary": "#F5F8FF",
       },
+      borderRadius: {
+        primary: "10px",
+        secondary: "30px",
+      },
       backgroundImage: {
         "bg-gradient":
           "linear-gradient(223.09deg, #063776 0.75%, #063776 20.17%, #0C67DC 70.33%)",
