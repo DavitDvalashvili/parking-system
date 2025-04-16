@@ -23,7 +23,7 @@ const Main = () => {
   else if (userData === "Network Error") return <ServerError />;
   else if (userData instanceof Object) {
     return (
-      <div className="w-screen h-screen flex font-firago bg-bg-primary ">
+      <div className="w-screen h-screen flex  bg-bg-primary ">
         <NavigationLayout />
         <div className="flex flex-col flex-1 bg-bg-image bg-right-top bg-no-repeat">
           <Outlet />
